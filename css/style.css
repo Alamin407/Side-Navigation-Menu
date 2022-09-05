@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.main-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.main-head{
+    width: 60px;
+    height: 100vh;
+    overflow: hidden;
+    background: #0a1128;
+    transition: .3s ease-in-out;
+}
+.main-wrap .main-head.active{
+    width: 20%;
+}
+.main-head .main-nav{
+    width: 100%;
+}
+.main-head .main-nav .navbar{
+    width: 100%;
+}
+.main-head .main-nav .navbar .navbar-nav .title{
+    padding: 15px 19px;
+    border-bottom: 1px solid #2f3e46;
+    transition: .1s ease-in-out;
+}
+.main-wrap .main-head.active .main-nav .navbar .navbar-nav .title{
+    padding: 15px 12px;
+}
+.main-head .main-nav .navbar .navbar-nav .title h3{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    position: relative;
+}
+.main-head .main-nav .navbar .navbar-nav .title h3 .title-text{
+    position: absolute;
+    left: 35px;
+    opacity: 0;
+    transition: .2s ease;
+}
+.main-wrap .main-head.active .main-nav .navbar .navbar-nav .title .title-text{
+    opacity: 1;
+}
+.main-head .main-nav .navbar .navbar-nav .nav-list{
+    margin: 0;
+    padding: 10px 10px;
+}
+.main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item{
+    list-style: none;
+    padding: 15px 10px;
+    transition: .2s ease-in-out;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item:last-child{
+    margin-bottom: 0;
+}
+.main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item:hover{
+    background: #2f3e46;
+}
+.main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link{
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+.main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link .link-text{
+    position: absolute;
+    top: 3px;
+    left: 35px;
+    opacity: 0;
+    transition: .2s ease;
+}
+.main-wrap .main-head.active .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link .link-text{
+    opacity: 1;
+}
+.main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+.showcase{
+    width: 97%;
+    height: 100vh;
+    background: url('../img/bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.showcase.width{
+    width: 80%;
+}
+.showcase .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba( 0, 0, 0, .6 );
+}
+.showcase .head{
+    padding: 13px 25px;
+}
+.showcase .head .toggler{
+    display: inline-block;
+    background: transparent;
+    border: none;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: .2s ease;
+}
+.showcase .head .toggler:hover{
+    background: #2f3e46;
+}
+.showcase .head .toggler i{
+    font-size: 20px;
+}
+.showcase .content{
+    width: 100%;
+    text-align: center;
+    padding: 150px 250px;
+}
+.showcase .content img{
+    width: 150px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px 0 rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    background: #fff;
+}
+.showcase .content h3{
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    line-height: 55px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.showcase .content p{
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    color: #fff;
+}
+.showcase .content .welcome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showcase .content .welcome .content-text{
+    width: 640px;
+}
